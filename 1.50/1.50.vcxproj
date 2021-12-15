@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c08d405e-213d-48e7-9f48-917d213c8474}</ProjectGuid>
+    <RootNamespace>My150</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="abigail1.c" />
+    <ClCompile Include="abigail2.ysc.c" />
+    <ClCompile Include="achievement_controller.ysc.c" />
+    <ClCompile Include="activity_creator_prototype_launcher.ysc.c" />
+    <ClCompile Include="act_cinema.ysc.c" />
+    <ClCompile Include="af_intro_t_sandy.ysc.c" />
+    <ClCompile Include="agency_heist1.ysc.c" />
+    <ClCompile Include="agency_heist2.ysc.c" />
+    <ClCompile Include="agency_heist3a.ysc.c" />
+    <ClCompile Include="agency_heist3b.ysc.c" />
+    <ClCompile Include="agency_prep1.ysc.c" />
+    <ClCompile Include="agency_prep2amb.ysc.c" />
+    <ClCompile Include="aicover_test.ysc.c" />
+    <ClCompile Include="ainewengland_test.ysc.c" />
+    <ClCompile Include="altruist_cult.ysc.c" />
+    <ClCompile Include="am_airstrike.ysc.c" />
+    <ClCompile Include="am_ammo_drop.ysc.c" />
+    <ClCompile Include="am_arena_shp.ysc.c" />
+    <ClCompile Include="am_armwrestling.ysc.c" />
+    <ClCompile Include="am_armwrestling_apartment.ysc.c" />
+    <ClCompile Include="am_armybase.ysc.c" />
+    <ClCompile Include="am_backup_heli.ysc.c" />
+    <ClCompile Include="am_boat_taxi.ysc.c" />
+    <ClCompile Include="am_bru_box.ysc.c" />
+    <ClCompile Include="am_car_mod_tut.ysc.c" />
+    <ClCompile Include="am_casino_limo.ysc.c" />
+    <ClCompile Include="am_casino_luxury_car.ysc.c" />
+    <ClCompile Include="am_casino_peds.ysc.c" />
+    <ClCompile Include="am_challenges.ysc.c" />
+    <ClCompile Include="am_contact_requests.ysc.c" />
+    <ClCompile Include="am_cp_collection.ysc.c" />
+    <ClCompile Include="am_crate_drop.ysc.c" />
+    <ClCompile Include="am_criminal_damage.ysc.c" />
+    <ClCompile Include="fmmc_launcher.ysc.c" />
+    <ClCompile Include="fmmc_playlist_controller.ysc.c" />
+    <ClCompile Include="fm_race_creator.ysc.c" />
+    <ClCompile Include="fm_survival_controller.ysc.c" />
+    <ClCompile Include="fm_survival_creator.ysc.c" />
+    <ClCompile Include="forsalesigns.ysc.c" />
+    <ClCompile Include="fps_test.ysc.c" />
+    <ClCompile Include="fps_test_mag.ysc.c" />
+    <ClCompile Include="franklin0.ysc.c" />
+    <ClCompile Include="franklin1.ysc.c" />
+    <ClCompile Include="franklin2.ysc.c" />
+    <ClCompile Include="freemode.ysc.c" />
+    <ClCompile Include="freemode_clearglobals.ysc.c" />
+    <ClCompile Include="freemode_init.ysc.c" />
+    <ClCompile Include="missioniaaturret.ysc.c" />
+    <ClCompile Include="mission_race.ysc.c" />
+    <ClCompile Include="mission_repeat_controller.ysc.c" />
+    <ClCompile Include="mission_stat_alerter.ysc.c" />
+    <ClCompile Include="mission_stat_watcher.ysc.c" />
+    <ClCompile Include="mission_triggerer_a.ysc.c" />
+    <ClCompile Include="mission_triggerer_b.ysc.c" />
+    <ClCompile Include="mission_triggerer_c.ysc.c" />
+    <ClCompile Include="mission_triggerer_d.ysc.c" />
+    <ClCompile Include="mp_awards.ysc.c" />
+    <ClCompile Include="mp_bed_high.ysc.c" />
+    <ClCompile Include="mp_fm_registration.ysc.c" />
+    <ClCompile Include="mp_menuped.ysc.c" />
+    <ClCompile Include="mp_prop_global_block.ysc.c" />
+    <ClCompile Include="mp_prop_special_global_block.ysc.c" />
+    <ClCompile Include="mp_registration.ysc.c" />
+    <ClCompile Include="mp_save_game_global_block.ysc.c" />
+    <ClCompile Include="mp_unlocks.ysc.c" />
+    <ClCompile Include="mp_weapons.ysc.c" />
+    <ClCompile Include="shop_controller.ysc.c" />
+    <ClCompile Include="test_startup.ysc.c" />
+    <ClCompile Include="thelastone.ysc.c" />
+    <ClCompile Include="three_card_poker.ysc.c" />
+    <ClCompile Include="timershud.ysc.c" />
+    <ClCompile Include="title_update_registration.ysc.c" />
+    <ClCompile Include="title_update_registration_2.ysc.c" />
+    <ClCompile Include="tonya1.ysc.c" />
+    <ClCompile Include="tonya2.ysc.c" />
+    <ClCompile Include="tonya3.ysc.c" />
+    <ClCompile Include="tonya4.ysc.c" />
+    <ClCompile Include="tonya5.ysc.c" />
+    <ClCompile Include="towing.ysc.c" />
+    <ClCompile Include="traffickingsettings.ysc.c" />
+    <ClCompile Include="traffickingteleport.ysc.c" />
+    <ClCompile Include="traffick_air.ysc.c" />
+    <ClCompile Include="traffick_ground.ysc.c" />
+    <ClCompile Include="train_create_widget.ysc.c" />
+    <ClCompile Include="train_tester.ysc.c" />
+    <ClCompile Include="trevor1.ysc.c" />
+    <ClCompile Include="trevor2.ysc.c" />
+    <ClCompile Include="trevor3.ysc.c" />
+    <ClCompile Include="trevor4.ysc.c" />
+    <ClCompile Include="triathlonsp.ysc.c" />
+    <ClCompile Include="tunables_registration.ysc.c" />
+    <ClCompile Include="tuneables_processing.ysc.c" />
+    <ClCompile Include="turret_cam_script.ysc.c" />
+    <ClCompile Include="ufo.ysc.c" />
+    <ClCompile Include="ugc_global_registration.ysc.c" />
+    <ClCompile Include="underwaterpickups.ysc.c" />
+    <ClCompile Include="utvc.ysc.c" />
+    <ClCompile Include="vehiclespawning.ysc.c" />
+    <ClCompile Include="vehicle_ai_test.ysc.c" />
+    <ClCompile Include="vehicle_force_widget.ysc.c" />
+    <ClCompile Include="vehicle_gen_controller.ysc.c" />
+    <ClCompile Include="vehicle_plate.ysc.c" />
+    <ClCompile Include="vehicle_stealth_mode.ysc.c" />
+    <ClCompile Include="veh_play_widget.ysc.c" />
+    <ClCompile Include="walking_ped.ysc.c" />
+    <ClCompile Include="wardrobe_mp.ysc.c" />
+    <ClCompile Include="wardrobe_sp.ysc.c" />
+    <ClCompile Include="weapon_audio_widget.ysc.c" />
+    <ClCompile Include="wizard_arcade.ysc.c" />
+    <ClCompile Include="wp_partyboombox.ysc.c" />
+    <ClCompile Include="xml_menus.ysc.c" />
+    <ClCompile Include="yoga.ysc.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

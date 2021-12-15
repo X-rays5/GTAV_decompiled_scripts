@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{10079765-9a45-4f66-a16d-441bc552891d}</ProjectGuid>
+    <RootNamespace>My146</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="abigail1.ysc.c" />
+    <ClCompile Include="abigail2.ysc.c" />
+    <ClCompile Include="achievement_controller.ysc.c" />
+    <ClCompile Include="activity_creator_prototype_launcher.ysc.c" />
+    <ClCompile Include="act_cinema.ysc.c" />
+    <ClCompile Include="af_intro_t_sandy.ysc.c" />
+    <ClCompile Include="agency_heist1.ysc.c" />
+    <ClCompile Include="agency_heist2.ysc.c" />
+    <ClCompile Include="agency_heist3a.ysc.c" />
+    <ClCompile Include="agency_heist3b.ysc.c" />
+    <ClCompile Include="agency_prep1.ysc.c" />
+    <ClCompile Include="agency_prep2amb.ysc.c" />
+    <ClCompile Include="aicover_test.ysc.c" />
+    <ClCompile Include="ainewengland_test.ysc.c" />
+    <ClCompile Include="altruist_cult.ysc.c" />
+    <ClCompile Include="ambientblimp.ysc.c" />
+    <ClCompile Include="ambient_diving.ysc.c" />
+    <ClCompile Include="ambient_mrsphilips.ysc.c" />
+    <ClCompile Include="ambient_solomon.ysc.c" />
+    <ClCompile Include="ambient_sonar.ysc.c" />
+    <ClCompile Include="ambient_tonya.ysc.c" />
+    <ClCompile Include="ambient_tonyacall.ysc.c" />
+    <ClCompile Include="ambient_tonyacall2.ysc.c" />
+    <ClCompile Include="ambient_tonyacall5.ysc.c" />
+    <ClCompile Include="ambient_ufos.ysc.c" />
+    <ClCompile Include="am_airstrike.ysc.c" />
+    <ClCompile Include="am_ammo_drop.ysc.c" />
+    <ClCompile Include="am_arena_shp.ysc.c" />
+    <ClCompile Include="am_armwrestling.ysc.c" />
+    <ClCompile Include="am_armwrestling_apartment.ysc.c" />
+    <ClCompile Include="am_armybase.ysc.c" />
+    <ClCompile Include="am_backup_heli.ysc.c" />
+    <ClCompile Include="am_boat_taxi.ysc.c" />
+    <ClCompile Include="am_bru_box.ysc.c" />
+    <ClCompile Include="am_car_mod_tut.ysc.c" />
+    <ClCompile Include="am_challenges.ysc.c" />
+    <ClCompile Include="am_contact_requests.ysc.c" />
+    <ClCompile Include="am_cp_collection.ysc.c" />
+    <ClCompile Include="am_crate_drop.ysc.c" />
+    <ClCompile Include="am_criminal_damage.ysc.c" />
+    <ClCompile Include="am_darts.ysc.c" />
+    <ClCompile Include="am_darts_apartment.ysc.c" />
+    <ClCompile Include="am_dead_drop.ysc.c" />
+    <ClCompile Include="am_destroy_veh.ysc.c" />
+    <ClCompile Include="am_distract_cops.ysc.c" />
+    <ClCompile Include="am_doors.ysc.c" />
+    <ClCompile Include="am_ferriswheel.ysc.c" />
+    <ClCompile Include="am_gang_call.ysc.c" />
+    <ClCompile Include="am_ga_pickups.ysc.c" />
+    <ClCompile Include="am_heist_int.ysc.c" />
+    <ClCompile Include="am_heli_taxi.ysc.c" />
+    <ClCompile Include="am_hold_up.ysc.c" />
+    <ClCompile Include="am_hot_property.ysc.c" />
+    <ClCompile Include="am_hot_target.ysc.c" />
+    <ClCompile Include="am_hunt_the_beast.ysc.c" />
+    <ClCompile Include="am_imp_exp.ysc.c" />
+    <ClCompile Include="am_joyrider.ysc.c" />
+    <ClCompile Include="am_kill_list.ysc.c" />
+    <ClCompile Include="am_king_of_the_castle.ysc.c" />
+    <ClCompile Include="am_launcher.ysc.c" />
+    <ClCompile Include="am_lester_cut.ysc.c" />
+    <ClCompile Include="am_lowrider_int.ysc.c" />
+    <ClCompile Include="am_mission_launch.ysc.c" />
+    <ClCompile Include="am_mp_arena_box.ysc.c" />
+    <ClCompile Include="am_mp_arena_garage.ysc.c" />
+    <ClCompile Include="am_mp_armory_aircraft.ysc.c" />
+    <ClCompile Include="am_mp_armory_truck.ysc.c" />
+    <ClCompile Include="am_mp_biker_warehouse.ysc.c" />
+    <ClCompile Include="am_mp_bunker.ysc.c" />
+    <ClCompile Include="am_mp_business_hub.ysc.c" />
+    <ClCompile Include="am_mp_carwash_launch.ysc.c" />
+    <ClCompile Include="am_mp_creator_aircraft.ysc.c" />
+    <ClCompile Include="am_mp_creator_trailer.ysc.c" />
+    <ClCompile Include="am_mp_defunct_base.ysc.c" />
+    <ClCompile Include="am_mp_drone.ysc.c" />
+    <ClCompile Include="am_mp_garage_control.ysc.c" />
+    <ClCompile Include="am_mp_hacker_truck.ysc.c" />
+    <ClCompile Include="am_mp_hangar.ysc.c" />
+    <ClCompile Include="am_mp_ie_warehouse.ysc.c" />
+    <ClCompile Include="am_mp_nightclub.ysc.c" />
+    <ClCompile Include="am_mp_orbital_cannon.ysc.c" />
+    <ClCompile Include="am_mp_property_ext.ysc.c" />
+    <ClCompile Include="am_mp_property_int.ysc.c" />
+    <ClCompile Include="am_mp_rc_vehicle.ysc.c" />
+    <ClCompile Include="am_mp_shooting_range.ysc.c" />
+    <ClCompile Include="am_mp_smpl_interior_ext.ysc.c" />
+    <ClCompile Include="am_mp_smpl_interior_int.ysc.c" />
+    <ClCompile Include="am_mp_vehicle_weapon.ysc.c" />
+    <ClCompile Include="am_mp_warehouse.ysc.c" />
+    <ClCompile Include="am_mp_yacht.ysc.c" />
+    <ClCompile Include="am_npc_invites.ysc.c" />
+    <ClCompile Include="am_pass_the_parcel.ysc.c" />
+    <ClCompile Include="am_penned_in.ysc.c" />
+    <ClCompile Include="am_pi_menu.ysc.c" />
+    <ClCompile Include="am_plane_takedown.ysc.c" />
+    <ClCompile Include="am_prison.ysc.c" />
+    <ClCompile Include="am_prostitute.ysc.c" />
+    <ClCompile Include="am_rollercoaster.ysc.c" />
+    <ClCompile Include="am_rontrevor_cut.ysc.c" />
+    <ClCompile Include="am_taxi.ysc.c" />
+    <ClCompile Include="am_vehicle_spawn.ysc.c" />
+    <ClCompile Include="animal_controller.ysc.c" />
+    <ClCompile Include="apartment_minigame_launcher.ysc.c" />
+    <ClCompile Include="appbikerbusiness.ysc.c" />
+    <ClCompile Include="appbroadcast.ysc.c" />
+    <ClCompile Include="appbunkerbusiness.ysc.c" />
+    <ClCompile Include="appbusinesshub.ysc.c" />
+    <ClCompile Include="appcamera.ysc.c" />
+    <ClCompile Include="appchecklist.ysc.c" />
+    <ClCompile Include="appcontacts.ysc.c" />
+    <ClCompile Include="appcovertops.ysc.c" />
+    <ClCompile Include="appemail.ysc.c" />
+    <ClCompile Include="appextraction.ysc.c" />
+    <ClCompile Include="apphackertruck.ysc.c" />
+    <ClCompile Include="apphs_sleep.ysc.c" />
+    <ClCompile Include="appimportexport.ysc.c" />
+    <ClCompile Include="appinternet.ysc.c" />
+    <ClCompile Include="appjipmp.ysc.c" />
+    <ClCompile Include="appmedia.ysc.c" />
+    <ClCompile Include="appmpbossagency.ysc.c" />
+    <ClCompile Include="appmpemail.ysc.c" />
+    <ClCompile Include="appmpjoblistnew.ysc.c" />
+    <ClCompile Include="apporganiser.ysc.c" />
+    <ClCompile Include="apprepeatplay.ysc.c" />
+    <ClCompile Include="appsecurohack.ysc.c" />
+    <ClCompile Include="appsecuroserv.ysc.c" />
+    <ClCompile Include="appsettings.ysc.c" />
+    <ClCompile Include="appsidetask.ysc.c" />
+    <ClCompile Include="appsmuggler.ysc.c" />
+    <ClCompile Include="apptextmessage.ysc.c" />
+    <ClCompile Include="apptrackify.ysc.c" />
+    <ClCompile Include="appvlsi.ysc.c" />
+    <ClCompile Include="appzit.ysc.c" />
+    <ClCompile Include="arena_box_bench_seats.ysc.c" />
+    <ClCompile Include="arena_carmod.ysc.c" />
+    <ClCompile Include="arena_workshop_seats.ysc.c" />
+    <ClCompile Include="armenian1.ysc.c" />
+    <ClCompile Include="armenian2.ysc.c" />
+    <ClCompile Include="armenian3.ysc.c" />
+    <ClCompile Include="armory_aircraft_carmod.ysc.c" />
+    <ClCompile Include="assassin_bus.ysc.c" />
+    <ClCompile Include="assassin_construction.ysc.c" />
+    <ClCompile Include="assassin_hooker.ysc.c" />
+    <ClCompile Include="assassin_multi.ysc.c" />
+    <ClCompile Include="assassin_rankup.ysc.c" />
+    <ClCompile Include="assassin_valet.ysc.c" />
+    <ClCompile Include="atm_trigger.ysc.c" />
+    <ClCompile Include="audiotest.ysc.c" />
+    <ClCompile Include="autosave_controller.ysc.c" />
+    <ClCompile Include="bailbond1.ysc.c" />
+    <ClCompile Include="bailbond2.ysc.c" />
+    <ClCompile Include="bailbond3.ysc.c" />
+    <ClCompile Include="bailbond4.ysc.c" />
+    <ClCompile Include="bailbond_launcher.ysc.c" />
+    <ClCompile Include="barry1.ysc.c" />
+    <ClCompile Include="barry2.ysc.c" />
+    <ClCompile Include="barry3.ysc.c" />
+    <ClCompile Include="barry3a.ysc.c" />
+    <ClCompile Include="barry3c.ysc.c" />
+    <ClCompile Include="barry4.ysc.c" />
+    <ClCompile Include="base_carmod.ysc.c" />
+    <ClCompile Include="base_corridor_seats.ysc.c" />
+    <ClCompile Include="base_entrance_seats.ysc.c" />
+    <ClCompile Include="base_heist_seats.ysc.c" />
+    <ClCompile Include="base_lounge_seats.ysc.c" />
+    <ClCompile Include="base_quaters_seats.ysc.c" />
+    <ClCompile Include="base_reception_seats.ysc.c" />
+    <ClCompile Include="benchmark.ysc.c" />
+    <ClCompile Include="bigwheel.ysc.c" />
+    <ClCompile Include="bj.ysc.c" />
+    <ClCompile Include="blimptest.ysc.c" />
+    <ClCompile Include="blip_controller.ysc.c" />
+    <ClCompile Include="bootycallhandler.ysc.c" />
+    <ClCompile Include="bootycall_debug_controller.ysc.c" />
+    <ClCompile Include="buddydeathresponse.ysc.c" />
+    <ClCompile Include="bugstar_mission_export.ysc.c" />
+    <ClCompile Include="buildingsiteambience.ysc.c" />
+    <ClCompile Include="building_controller.ysc.c" />
+    <ClCompile Include="business_battles.ysc.c" />
+    <ClCompile Include="business_battles_defend.ysc.c" />
+    <ClCompile Include="business_battles_sell.ysc.c" />
+    <ClCompile Include="business_hub_carmod.ysc.c" />
+    <ClCompile Include="business_hub_garage_seats.ysc.c" />
+    <ClCompile Include="cablecar.ysc.c" />
+    <ClCompile Include="camera_test.ysc.c" />
+    <ClCompile Include="cam_coord_sender.ysc.c" />
+    <ClCompile Include="candidate_controller.ysc.c" />
+    <ClCompile Include="carmod_shop.ysc.c" />
+    <ClCompile Include="carsteal1.ysc.c" />
+    <ClCompile Include="carsteal2.ysc.c" />
+    <ClCompile Include="carsteal3.ysc.c" />
+    <ClCompile Include="carsteal4.ysc.c" />
+    <ClCompile Include="carwash1.ysc.c" />
+    <ClCompile Include="carwash2.ysc.c" />
+    <ClCompile Include="car_roof_test.ysc.c" />
+    <ClCompile Include="celebrations.ysc.c" />
+    <ClCompile Include="celebration_editor.ysc.c" />
+    <ClCompile Include="cellphone_controller.ysc.c" />
+    <ClCompile Include="cellphone_flashhand.ysc.c" />
+    <ClCompile Include="charactergoals.ysc.c" />
+    <ClCompile Include="charanimtest.ysc.c" />
+    <ClCompile Include="cheat_controller.ysc.c" />
+    <ClCompile Include="chinese1.ysc.c" />
+    <ClCompile Include="chinese2.ysc.c" />
+    <ClCompile Include="chop.ysc.c" />
+    <ClCompile Include="clothes_shop_mp.ysc.c" />
+    <ClCompile Include="clothes_shop_sp.ysc.c" />
+    <ClCompile Include="code_controller.ysc.c" />
+    <ClCompile Include="combat_test.ysc.c" />
+    <ClCompile Include="comms_controller.ysc.c" />
+    <ClCompile Include="completionpercentage_controller.ysc.c" />
+    <ClCompile Include="component_checker.ysc.c" />
+    <ClCompile Include="context_controller.ysc.c" />
+    <ClCompile Include="controller_ambientarea.ysc.c" />
+    <ClCompile Include="controller_races.ysc.c" />
+    <ClCompile Include="controller_taxi.ysc.c" />
+    <ClCompile Include="controller_towing.ysc.c" />
+    <ClCompile Include="controller_trafficking.ysc.c" />
+    <ClCompile Include="coordinate_recorder.ysc.c" />
+    <ClCompile Include="country_race.ysc.c" />
+    <ClCompile Include="country_race_controller.ysc.c" />
+    <ClCompile Include="creation_startup.ysc.c" />
+    <ClCompile Include="creator.ysc.c" />
+    <ClCompile Include="custom_config.ysc.c" />
+    <ClCompile Include="cutscenemetrics.ysc.c" />
+    <ClCompile Include="cutscenesamples.ysc.c" />
+    <ClCompile Include="cutscene_test.ysc.c" />
+    <ClCompile Include="darts.ysc.c" />
+    <ClCompile Include="debug.ysc.c" />
+    <ClCompile Include="debug_app_select_screen.ysc.c" />
+    <ClCompile Include="debug_clone_outfit_testing.ysc.c" />
+    <ClCompile Include="debug_launcher.ysc.c" />
+    <ClCompile Include="debug_ped_data.ysc.c" />
+    <ClCompile Include="density_test.ysc.c" />
+    <ClCompile Include="dialogue_handler.ysc.c" />
+    <ClCompile Include="director_mode.ysc.c" />
+    <ClCompile Include="docks2asubhandler.ysc.c" />
+    <ClCompile Include="docks_heista.ysc.c" />
+    <ClCompile Include="docks_heistb.ysc.c" />
+    <ClCompile Include="docks_prep1.ysc.c" />
+    <ClCompile Include="docks_prep2b.ysc.c" />
+    <ClCompile Include="docks_setup.ysc.c" />
+    <ClCompile Include="dont_cross_the_line.ysc.c" />
+    <ClCompile Include="dreyfuss1.ysc.c" />
+    <ClCompile Include="drf1.ysc.c" />
+    <ClCompile Include="drf2.ysc.c" />
+    <ClCompile Include="drf3.ysc.c" />
+    <ClCompile Include="drf4.ysc.c" />
+    <ClCompile Include="drf5.ysc.c" />
+    <ClCompile Include="drunk.ysc.c" />
+    <ClCompile Include="drunk_controller.ysc.c" />
+    <ClCompile Include="dynamixtest.ysc.c" />
+    <ClCompile Include="email_controller.ysc.c" />
+    <ClCompile Include="emergencycall.ysc.c" />
+    <ClCompile Include="emergencycalllauncher.ysc.c" />
+    <ClCompile Include="epscars.ysc.c" />
+    <ClCompile Include="epsdesert.ysc.c" />
+    <ClCompile Include="epsilon1.ysc.c" />
+    <ClCompile Include="epsilon2.ysc.c" />
+    <ClCompile Include="epsilon3.ysc.c" />
+    <ClCompile Include="epsilon4.ysc.c" />
+    <ClCompile Include="epsilon5.ysc.c" />
+    <ClCompile Include="epsilon6.ysc.c" />
+    <ClCompile Include="epsilon7.ysc.c" />
+    <ClCompile Include="epsilon8.ysc.c" />
+    <ClCompile Include="epsilontract.ysc.c" />
+    <ClCompile Include="epsrobes.ysc.c" />
+    <ClCompile Include="error_listener.ysc.c" />
+    <ClCompile Include="error_thrower.ysc.c" />
+    <ClCompile Include="event_controller.ysc.c" />
+    <ClCompile Include="exile1.ysc.c" />
+    <ClCompile Include="exile2.ysc.c" />
+    <ClCompile Include="exile3.ysc.c" />
+    <ClCompile Include="exile_city_denial.ysc.c" />
+    <ClCompile Include="extreme1.ysc.c" />
+    <ClCompile Include="extreme2.ysc.c" />
+    <ClCompile Include="extreme3.ysc.c" />
+    <ClCompile Include="extreme4.ysc.c" />
+    <ClCompile Include="fairgroundhub.ysc.c" />
+    <ClCompile Include="fake_interiors.ysc.c" />
+    <ClCompile Include="fameorshame_eps.ysc.c" />
+    <ClCompile Include="fameorshame_eps_1.ysc.c" />
+    <ClCompile Include="fame_or_shame_set.ysc.c" />
+    <ClCompile Include="family1.ysc.c" />
+    <ClCompile Include="family1taxi.ysc.c" />
+    <ClCompile Include="family2.ysc.c" />
+    <ClCompile Include="family3.ysc.c" />
+    <ClCompile Include="family4.ysc.c" />
+    <ClCompile Include="family5.ysc.c" />
+    <ClCompile Include="family6.ysc.c" />
+    <ClCompile Include="family_scene_f0.ysc.c" />
+    <ClCompile Include="family_scene_f1.ysc.c" />
+    <ClCompile Include="family_scene_m.ysc.c" />
+    <ClCompile Include="family_scene_t0.ysc.c" />
+    <ClCompile Include="family_scene_t1.ysc.c" />
+    <ClCompile Include="fanatic1.ysc.c" />
+    <ClCompile Include="fanatic2.ysc.c" />
+    <ClCompile Include="fanatic3.ysc.c" />
+    <ClCompile Include="fbi1.ysc.c" />
+    <ClCompile Include="fbi2.ysc.c" />
+    <ClCompile Include="fbi3.ysc.c" />
+    <ClCompile Include="fbi4.ysc.c" />
+    <ClCompile Include="fbi4_intro.ysc.c" />
+    <ClCompile Include="fbi4_prep1.ysc.c" />
+    <ClCompile Include="fbi4_prep2.ysc.c" />
+    <ClCompile Include="fbi4_prep3.ysc.c" />
+    <ClCompile Include="fbi4_prep3amb.ysc.c" />
+    <ClCompile Include="fbi4_prep4.ysc.c" />
+    <ClCompile Include="fbi4_prep5.ysc.c" />
+    <ClCompile Include="fbi5a.ysc.c" />
+    <ClCompile Include="finalea.ysc.c" />
+    <ClCompile Include="finaleb.ysc.c" />
+    <ClCompile Include="finalec1.ysc.c" />
+    <ClCompile Include="finalec2.ysc.c" />
+    <ClCompile Include="finale_choice.ysc.c" />
+    <ClCompile Include="finale_credits.ysc.c" />
+    <ClCompile Include="finale_endgame.ysc.c" />
+    <ClCompile Include="finale_heist1.ysc.c" />
+    <ClCompile Include="finale_heist2a.ysc.c" />
+    <ClCompile Include="finale_heist2b.ysc.c" />
+    <ClCompile Include="finale_heist2_intro.ysc.c" />
+    <ClCompile Include="finale_heist_prepa.ysc.c" />
+    <ClCompile Include="finale_heist_prepb.ysc.c" />
+    <ClCompile Include="finale_heist_prepc.ysc.c" />
+    <ClCompile Include="finale_heist_prepd.ysc.c" />
+    <ClCompile Include="finale_heist_prepeamb.ysc.c" />
+    <ClCompile Include="finale_intro.ysc.c" />
+    <ClCompile Include="floating_help_controller.ysc.c" />
+    <ClCompile Include="flowintrotitle.ysc.c" />
+    <ClCompile Include="flowstartaccept.ysc.c" />
+    <ClCompile Include="flow_autoplay.ysc.c" />
+    <ClCompile Include="flow_controller.ysc.c" />
+    <ClCompile Include="flow_help.ysc.c" />
+    <ClCompile Include="flyunderbridges.ysc.c" />
+    <ClCompile Include="fmmc_launcher.ysc.c" />
+    <ClCompile Include="fmmc_playlist_controller.ysc.c" />
+    <ClCompile Include="fm_bj_race_controler.ysc.c" />
+    <ClCompile Include="fm_capture_creator.ysc.c" />
+    <ClCompile Include="fm_deathmatch_controler.ysc.c" />
+    <ClCompile Include="fm_deathmatch_creator.ysc.c" />
+    <ClCompile Include="fm_hideout_controler.ysc.c" />
+    <ClCompile Include="fm_hold_up_tut.ysc.c" />
+    <ClCompile Include="fm_horde_controler.ysc.c" />
+    <ClCompile Include="fm_impromptu_dm_controler.ysc.c" />
+    <ClCompile Include="fm_intro.ysc.c" />
+    <ClCompile Include="fm_intro_cut_dev.ysc.c" />
+    <ClCompile Include="fm_lts_creator.ysc.c" />
+    <ClCompile Include="fm_maintain_cloud_header_data.ysc.c" />
+    <ClCompile Include="fm_maintain_transition_players.ysc.c" />
+    <ClCompile Include="fm_main_menu.ysc.c" />
+    <ClCompile Include="fm_mission_controller.ysc.c" />
+    <ClCompile Include="fm_mission_creator.ysc.c" />
+    <ClCompile Include="fm_race_controler.ysc.c" />
+    <ClCompile Include="fm_race_creator.ysc.c" />
+    <ClCompile Include="forsalesigns.ysc.c" />
+    <ClCompile Include="fps_test.ysc.c" />
+    <ClCompile Include="fps_test_mag.ysc.c" />
+    <ClCompile Include="franklin0.ysc.c" />
+    <ClCompile Include="franklin1.ysc.c" />
+    <ClCompile Include="franklin2.ysc.c" />
+    <ClCompile Include="freemode.ysc.c" />
+    <ClCompile Include="freemode_clearglobals.ysc.c" />
+    <ClCompile Include="freemode_init.ysc.c" />
+    <ClCompile Include="friendactivity.ysc.c" />
+    <ClCompile Include="friends_controller.ysc.c" />
+    <ClCompile Include="friends_debug_controller.ysc.c" />
+    <ClCompile Include="fullmap_test.ysc.c" />
+    <ClCompile Include="fullmap_test_flow.ysc.c" />
+    <ClCompile Include="game_server_test.ysc.c" />
+    <ClCompile Include="gb_airfreight.ysc.c" />
+    <ClCompile Include="gb_amphibious_assault.ysc.c" />
+    <ClCompile Include="gb_assault.ysc.c" />
+    <ClCompile Include="gb_bank_job.ysc.c" />
+    <ClCompile Include="gb_bellybeast.ysc.c" />
+    <ClCompile Include="gb_biker_bad_deal.ysc.c" />
+    <ClCompile Include="gb_biker_burn_assets.ysc.c" />
+    <ClCompile Include="gb_biker_contraband_defend.ysc.c" />
+    <ClCompile Include="gb_biker_contraband_sell.ysc.c" />
+    <ClCompile Include="gb_biker_contract_killing.ysc.c" />
+    <ClCompile Include="gb_biker_criminal_mischief.ysc.c" />
+    <ClCompile Include="gb_biker_destroy_vans.ysc.c" />
+    <ClCompile Include="gb_biker_driveby_assassin.ysc.c" />
+    <ClCompile Include="gb_biker_free_prisoner.ysc.c" />
+    <ClCompile Include="gb_biker_joust.ysc.c" />
+    <ClCompile Include="gb_biker_last_respects.ysc.c" />
+    <ClCompile Include="gb_biker_race_p2p.ysc.c" />
+    <ClCompile Include="gb_biker_rescue_contact.ysc.c" />
+    <ClCompile Include="gb_biker_rippin_it_up.ysc.c" />
+    <ClCompile Include="gb_biker_safecracker.ysc.c" />
+    <ClCompile Include="gb_biker_search_and_destroy.ysc.c" />
+    <ClCompile Include="gb_biker_shuttle.ysc.c" />
+    <ClCompile Include="gb_biker_stand_your_ground.ysc.c" />
+    <ClCompile Include="gb_biker_steal_bikes.ysc.c" />
+    <ClCompile Include="gb_biker_target_rival.ysc.c" />
+    <ClCompile Include="gb_biker_unload_weapons.ysc.c" />
+    <ClCompile Include="gb_biker_wheelie_rider.ysc.c" />
+    <ClCompile Include="gb_carjacking.ysc.c" />
+    <ClCompile Include="gb_cashing_out.ysc.c" />
+    <ClCompile Include="gb_collect_money.ysc.c" />
+    <ClCompile Include="gb_contraband_buy.ysc.c" />
+    <ClCompile Include="gb_contraband_defend.ysc.c" />
+    <ClCompile Include="gb_contraband_sell.ysc.c" />
+    <ClCompile Include="gb_data_hack.ysc.c" />
+    <ClCompile Include="gb_deathmatch.ysc.c" />
+    <ClCompile Include="gb_delivery.ysc.c" />
+    <ClCompile Include="gb_finderskeepers.ysc.c" />
+    <ClCompile Include="gb_fivestar.ysc.c" />
+    <ClCompile Include="gb_fortified.ysc.c" />
+    <ClCompile Include="gb_fragile_goods.ysc.c" />
+    <ClCompile Include="gb_fully_loaded.ysc.c" />
+    <ClCompile Include="gb_gangops.ysc.c" />
+    <ClCompile Include="gb_gang_ops_planning.ysc.c" />
+    <ClCompile Include="gb_gunrunning.ysc.c" />
+    <ClCompile Include="gb_gunrunning_defend.ysc.c" />
+    <ClCompile Include="gb_gunrunning_delivery.ysc.c" />
+    <ClCompile Include="gb_headhunter.ysc.c" />
+    <ClCompile Include="gb_hunt_the_boss.ysc.c" />
+    <ClCompile Include="gb_ie_delivery_cutscene.ysc.c" />
+    <ClCompile Include="gb_illicit_goods_resupply.ysc.c" />
+    <ClCompile Include="gb_infiltration.ysc.c" />
+    <ClCompile Include="gb_jewel_store_grab.ysc.c" />
+    <ClCompile Include="gb_ploughed.ysc.c" />
+    <ClCompile Include="gb_point_to_point.ysc.c" />
+    <ClCompile Include="gb_ramped_up.ysc.c" />
+    <ClCompile Include="gb_rob_shop.ysc.c" />
+    <ClCompile Include="gb_salvage.ysc.c" />
+    <ClCompile Include="gb_security_van.ysc.c" />
+    <ClCompile Include="gb_sightseer.ysc.c" />
+    <ClCompile Include="gb_smuggler.ysc.c" />
+    <ClCompile Include="gb_stockpiling.ysc.c" />
+    <ClCompile Include="gb_target_pursuit.ysc.c" />
+    <ClCompile Include="gb_terminate.ysc.c" />
+    <ClCompile Include="gb_transporter.ysc.c" />
+    <ClCompile Include="gb_vehicle_export.ysc.c" />
+    <ClCompile Include="gb_velocity.ysc.c" />
+    <ClCompile Include="gb_yacht_rob.ysc.c" />
+    <ClCompile Include="general_test.ysc.c" />
+    <ClCompile Include="globals_fmmc_struct_registration.ysc.c" />
+    <ClCompile Include="golf.ysc.c" />
+    <ClCompile Include="golf_ai_foursome.ysc.c" />
+    <ClCompile Include="golf_ai_foursome_putting.ysc.c" />
+    <ClCompile Include="golf_mp.ysc.c" />
+    <ClCompile Include="gpb_andymoon.ysc.c" />
+    <ClCompile Include="gpb_baygor.ysc.c" />
+    <ClCompile Include="gpb_billbinder.ysc.c" />
+    <ClCompile Include="gpb_clinton.ysc.c" />
+    <ClCompile Include="gpb_griff.ysc.c" />
+    <ClCompile Include="gpb_jane.ysc.c" />
+    <ClCompile Include="gpb_jerome.ysc.c" />
+    <ClCompile Include="gpb_jesse.ysc.c" />
+    <ClCompile Include="gpb_mani.ysc.c" />
+    <ClCompile Include="gpb_mime.ysc.c" />
+    <ClCompile Include="gpb_pameladrake.ysc.c" />
+    <ClCompile Include="gpb_superhero.ysc.c" />
+    <ClCompile Include="gpb_tonya.ysc.c" />
+    <ClCompile Include="gpb_zombie.ysc.c" />
+    <ClCompile Include="gtest_airplane.ysc.c" />
+    <ClCompile Include="gtest_avoidance.ysc.c" />
+    <ClCompile Include="gtest_boat.ysc.c" />
+    <ClCompile Include="gtest_divingfromcar.ysc.c" />
+    <ClCompile Include="gtest_divingfromcarwhilefleeing.ysc.c" />
+    <ClCompile Include="gtest_helicopter.ysc.c" />
+    <ClCompile Include="gtest_nearlymissedbycar.ysc.c" />
+    <ClCompile Include="gunclub_shop.ysc.c" />
+    <ClCompile Include="gunfighttest.ysc.c" />
+    <ClCompile Include="hacker_truck_carmod.ysc.c" />
+    <ClCompile Include="hairdo_shop_mp.ysc.c" />
+    <ClCompile Include="hairdo_shop_sp.ysc.c" />
+    <ClCompile Include="hangar_carmod.ysc.c" />
+    <ClCompile Include="hao1.ysc.c" />
+    <ClCompile Include="headertest.ysc.c" />
+    <ClCompile Include="heatmap_test.ysc.c" />
+    <ClCompile Include="heatmap_test_flow.ysc.c" />
+    <ClCompile Include="heist_ctrl_agency.ysc.c" />
+    <ClCompile Include="heist_ctrl_docks.ysc.c" />
+    <ClCompile Include="heist_ctrl_finale.ysc.c" />
+    <ClCompile Include="heist_ctrl_jewel.ysc.c" />
+    <ClCompile Include="heist_ctrl_rural.ysc.c" />
+    <ClCompile Include="heli_gun.ysc.c" />
+    <ClCompile Include="heli_streaming.ysc.c" />
+    <ClCompile Include="hud_creator.ysc.c" />
+    <ClCompile Include="hunting1.ysc.c" />
+    <ClCompile Include="hunting2.ysc.c" />
+    <ClCompile Include="hunting_ambient.ysc.c" />
+    <ClCompile Include="idlewarper.ysc.c" />
+    <ClCompile Include="ingamehud.ysc.c" />
+    <ClCompile Include="initial.ysc.c" />
+    <ClCompile Include="jewelry_heist.ysc.c" />
+    <ClCompile Include="jewelry_prep1a.ysc.c" />
+    <ClCompile Include="jewelry_prep1b.ysc.c" />
+    <ClCompile Include="jewelry_prep2a.ysc.c" />
+    <ClCompile Include="jewelry_setup1.ysc.c" />
+    <ClCompile Include="josh1.ysc.c" />
+    <ClCompile Include="josh2.ysc.c" />
+    <ClCompile Include="josh3.ysc.c" />
+    <ClCompile Include="josh4.ysc.c" />
+    <ClCompile Include="lamar1.ysc.c" />
+    <ClCompile Include="laptop_trigger.ysc.c" />
+    <ClCompile Include="launcher_abigail.ysc.c" />
+    <ClCompile Include="launcher_barry.ysc.c" />
+    <ClCompile Include="launcher_basejumpheli.ysc.c" />
+    <ClCompile Include="launcher_basejumppack.ysc.c" />
+    <ClCompile Include="launcher_carwash.ysc.c" />
+    <ClCompile Include="launcher_darts.ysc.c" />
+    <ClCompile Include="launcher_dreyfuss.ysc.c" />
+    <ClCompile Include="launcher_epsilon.ysc.c" />
+    <ClCompile Include="launcher_extreme.ysc.c" />
+    <ClCompile Include="launcher_fanatic.ysc.c" />
+    <ClCompile Include="launcher_golf.ysc.c" />
+    <ClCompile Include="launcher_hao.ysc.c" />
+    <ClCompile Include="launcher_hunting.ysc.c" />
+    <ClCompile Include="launcher_hunting_ambient.ysc.c" />
+    <ClCompile Include="launcher_josh.ysc.c" />
+    <ClCompile Include="launcher_maude.ysc.c" />
+    <ClCompile Include="launcher_minute.ysc.c" />
+    <ClCompile Include="launcher_mrsphilips.ysc.c" />
+    <ClCompile Include="launcher_nigel.ysc.c" />
+    <ClCompile Include="launcher_offroadracing.ysc.c" />
+    <ClCompile Include="launcher_omega.ysc.c" />
+    <ClCompile Include="launcher_paparazzo.ysc.c" />
+    <ClCompile Include="launcher_pilotschool.ysc.c" />
+    <ClCompile Include="launcher_racing.ysc.c" />
+    <ClCompile Include="launcher_rampage.ysc.c" />
+    <ClCompile Include="launcher_range.ysc.c" />
+    <ClCompile Include="launcher_stunts.ysc.c" />
+    <ClCompile Include="launcher_tennis.ysc.c" />
+    <ClCompile Include="launcher_thelastone.ysc.c" />
+    <ClCompile Include="launcher_tonya.ysc.c" />
+    <ClCompile Include="launcher_triathlon.ysc.c" />
+    <ClCompile Include="launcher_yoga.ysc.c" />
+    <ClCompile Include="lester1.ysc.c" />
+    <ClCompile Include="lesterhandler.ysc.c" />
+    <ClCompile Include="letterscraps.ysc.c" />
+    <ClCompile Include="line_activation_test.ysc.c" />
+    <ClCompile Include="liverecorder.ysc.c" />
+    <ClCompile Include="locates_tester.ysc.c" />
+    <ClCompile Include="luxe_veh_activity.ysc.c" />
+    <ClCompile Include="magdemo.ysc.c" />
+    <ClCompile Include="magdemo2.ysc.c" />
+    <ClCompile Include="main.ysc.c" />
+    <ClCompile Include="maintransition.ysc.c" />
+    <ClCompile Include="main_install.ysc.c" />
+    <ClCompile Include="main_persistent.ysc.c" />
+    <ClCompile Include="martin1.ysc.c" />
+    <ClCompile Include="maude1.ysc.c" />
+    <ClCompile Include="maude_postbailbond.ysc.c" />
+    <ClCompile Include="me_amanda1.ysc.c" />
+    <ClCompile Include="me_jimmy1.ysc.c" />
+    <ClCompile Include="me_tracey1.ysc.c" />
+    <ClCompile Include="mg_race_to_point.ysc.c" />
+    <ClCompile Include="michael1.ysc.c" />
+    <ClCompile Include="michael2.ysc.c" />
+    <ClCompile Include="michael3.ysc.c" />
+    <ClCompile Include="michael4.ysc.c" />
+    <ClCompile Include="michael4leadout.ysc.c" />
+    <ClCompile Include="minigame_ending_stinger.ysc.c" />
+    <ClCompile Include="minigame_stats_tracker.ysc.c" />
+    <ClCompile Include="minute1.ysc.c" />
+    <ClCompile Include="minute2.ysc.c" />
+    <ClCompile Include="minute3.ysc.c" />
+    <ClCompile Include="missioniaaturret.ysc.c" />
+    <ClCompile Include="mission_race.ysc.c" />
+    <ClCompile Include="mission_repeat_controller.ysc.c" />
+    <ClCompile Include="mission_stat_alerter.ysc.c" />
+    <ClCompile Include="mission_stat_watcher.ysc.c" />
+    <ClCompile Include="mission_triggerer_a.ysc.c" />
+    <ClCompile Include="mission_triggerer_b.ysc.c" />
+    <ClCompile Include="mission_triggerer_c.ysc.c" />
+    <ClCompile Include="mission_triggerer_d.ysc.c" />
+    <ClCompile Include="mpstatsinit.ysc.c" />
+    <ClCompile Include="mptestbed.ysc.c" />
+    <ClCompile Include="mp_awards.ysc.c" />
+    <ClCompile Include="mp_bed_high.ysc.c" />
+    <ClCompile Include="mp_fm_registration.ysc.c" />
+    <ClCompile Include="mp_menuped.ysc.c" />
+    <ClCompile Include="mp_prop_global_block.ysc.c" />
+    <ClCompile Include="mp_prop_special_global_block.ysc.c" />
+    <ClCompile Include="mp_registration.ysc.c" />
+    <ClCompile Include="mp_save_game_global_block.ysc.c" />
+    <ClCompile Include="mp_unlocks.ysc.c" />
+    <ClCompile Include="mp_weapons.ysc.c" />
+    <ClCompile Include="mrsphilips1.ysc.c" />
+    <ClCompile Include="mrsphilips2.ysc.c" />
+    <ClCompile Include="murdermystery.ysc.c" />
+    <ClCompile Include="navmeshtest.ysc.c" />
+    <ClCompile Include="net_activity_creator_ui.ysc.c" />
+    <ClCompile Include="net_apartment_activity.ysc.c" />
+    <ClCompile Include="net_apartment_activity_light.ysc.c" />
+    <ClCompile Include="net_bot_brain.ysc.c" />
+    <ClCompile Include="net_bot_simplebrain.ysc.c" />
+    <ClCompile Include="net_cloud_mission_loader.ysc.c" />
+    <ClCompile Include="net_combat_soaktest.ysc.c" />
+    <ClCompile Include="net_jacking_soaktest.ysc.c" />
+    <ClCompile Include="net_rank_tunable_loader.ysc.c" />
+    <ClCompile Include="net_session_soaktest.ysc.c" />
+    <ClCompile Include="net_tunable_check.ysc.c" />
+    <ClCompile Include="nigel1.ysc.c" />
+    <ClCompile Include="nigel1a.ysc.c" />
+    <ClCompile Include="nigel1b.ysc.c" />
+    <ClCompile Include="nigel1c.ysc.c" />
+    <ClCompile Include="nigel1d.ysc.c" />
+    <ClCompile Include="nigel2.ysc.c" />
+    <ClCompile Include="nigel3.ysc.c" />
+    <ClCompile Include="nightclubpeds.ysc.c" />
+    <ClCompile Include="nightclub_ground_floor_seats.ysc.c" />
+    <ClCompile Include="nightclub_office_seats.ysc.c" />
+    <ClCompile Include="nightclub_vip_seats.ysc.c" />
+    <ClCompile Include="nodeviewer.ysc.c" />
+    <ClCompile Include="ob_abatdoor.ysc.c" />
+    <ClCompile Include="ob_abattoircut.ysc.c" />
+    <ClCompile Include="ob_airdancer.ysc.c" />
+    <ClCompile Include="ob_bong.ysc.c" />
+    <ClCompile Include="ob_cashregister.ysc.c" />
+    <ClCompile Include="ob_drinking_shots.ysc.c" />
+    <ClCompile Include="ob_foundry_cauldron.ysc.c" />
+    <ClCompile Include="ob_franklin_beer.ysc.c" />
+    <ClCompile Include="ob_franklin_tv.ysc.c" />
+    <ClCompile Include="ob_franklin_wine.ysc.c" />
+    <ClCompile Include="ob_huffing_gas.ysc.c" />
+    <ClCompile Include="ob_jukebox.ysc.c" />
+    <ClCompile Include="ob_mp_bed_high.ysc.c" />
+    <ClCompile Include="ob_mp_bed_low.ysc.c" />
+    <ClCompile Include="ob_mp_bed_med.ysc.c" />
+    <ClCompile Include="ob_mp_shower_med.ysc.c" />
+    <ClCompile Include="ob_mp_stripper.ysc.c" />
+    <ClCompile Include="ob_mr_raspberry_jam.ysc.c" />
+    <ClCompile Include="ob_poledancer.ysc.c" />
+    <ClCompile Include="ob_sofa_franklin.ysc.c" />
+    <ClCompile Include="ob_sofa_michael.ysc.c" />
+    <ClCompile Include="ob_telescope.ysc.c" />
+    <ClCompile Include="ob_tv.ysc.c" />
+    <ClCompile Include="ob_vend1.ysc.c" />
+    <ClCompile Include="ob_vend2.ysc.c" />
+    <ClCompile Include="ob_wheatgrass.ysc.c" />
+    <ClCompile Include="offroad_races.ysc.c" />
+    <ClCompile Include="omega1.ysc.c" />
+    <ClCompile Include="omega2.ysc.c" />
+    <ClCompile Include="paparazzo1.ysc.c" />
+    <ClCompile Include="paparazzo2.ysc.c" />
+    <ClCompile Include="paparazzo3.ysc.c" />
+    <ClCompile Include="paparazzo3a.ysc.c" />
+    <ClCompile Include="paparazzo3b.ysc.c" />
+    <ClCompile Include="paparazzo4.ysc.c" />
+    <ClCompile Include="paradise.ysc.c" />
+    <ClCompile Include="paradise2.ysc.c" />
+    <ClCompile Include="pausemenu.ysc.c" />
+    <ClCompile Include="pausemenu_example.ysc.c" />
+    <ClCompile Include="pausemenu_map.ysc.c" />
+    <ClCompile Include="pausemenu_multiplayer.ysc.c" />
+    <ClCompile Include="pausemenu_sp_repeat.ysc.c" />
+    <ClCompile Include="pb_busker.ysc.c" />
+    <ClCompile Include="pb_homeless.ysc.c" />
+    <ClCompile Include="pb_preacher.ysc.c" />
+    <ClCompile Include="pb_prostitute.ysc.c" />
+    <ClCompile Include="personal_carmod_shop.ysc.c" />
+    <ClCompile Include="photographymonkey.ysc.c" />
+    <ClCompile Include="photographywildlife.ysc.c" />
+    <ClCompile Include="physics_perf_test.ysc.c" />
+    <ClCompile Include="physics_perf_test_launcher.ysc.c" />
+    <ClCompile Include="pickuptest.ysc.c" />
+    <ClCompile Include="pickupvehicles.ysc.c" />
+    <ClCompile Include="pickup_controller.ysc.c" />
+    <ClCompile Include="pilot_school.ysc.c" />
+    <ClCompile Include="pilot_school_mp.ysc.c" />
+    <ClCompile Include="pi_menu.ysc.c" />
+    <ClCompile Include="placeholdermission.ysc.c" />
+    <ClCompile Include="placementtest.ysc.c" />
+    <ClCompile Include="planewarptest.ysc.c" />
+    <ClCompile Include="player_controller.ysc.c" />
+    <ClCompile Include="player_controller_b.ysc.c" />
+    <ClCompile Include="player_scene_ft_franklin1.ysc.c" />
+    <ClCompile Include="player_scene_f_lamgraff.ysc.c" />
+    <ClCompile Include="player_scene_f_lamtaunt.ysc.c" />
+    <ClCompile Include="player_scene_f_taxi.ysc.c" />
+    <ClCompile Include="player_scene_mf_traffic.ysc.c" />
+    <ClCompile Include="player_scene_m_cinema.ysc.c" />
+    <ClCompile Include="player_scene_m_fbi2.ysc.c" />
+    <ClCompile Include="player_scene_m_kids.ysc.c" />
+    <ClCompile Include="player_scene_m_shopping.ysc.c" />
+    <ClCompile Include="player_scene_t_bbfight.ysc.c" />
+    <ClCompile Include="player_scene_t_chasecar.ysc.c" />
+    <ClCompile Include="player_scene_t_insult.ysc.c" />
+    <ClCompile Include="player_scene_t_park.ysc.c" />
+    <ClCompile Include="player_scene_t_tie.ysc.c" />
+    <ClCompile Include="player_timetable_scene.ysc.c" />
+    <ClCompile Include="playthrough_builder.ysc.c" />
+    <ClCompile Include="pm_defend.ysc.c" />
+    <ClCompile Include="pm_delivery.ysc.c" />
+    <ClCompile Include="pm_gang_attack.ysc.c" />
+    <ClCompile Include="pm_plane_promotion.ysc.c" />
+    <ClCompile Include="pm_recover_stolen.ysc.c" />
+    <ClCompile Include="postkilled_bailbond2.ysc.c" />
+    <ClCompile Include="postrc_barry1and2.ysc.c" />
+    <ClCompile Include="postrc_barry4.ysc.c" />
+    <ClCompile Include="postrc_epsilon4.ysc.c" />
+    <ClCompile Include="postrc_nigel3.ysc.c" />
+    <ClCompile Include="profiler_registration.ysc.c" />
+    <ClCompile Include="prologue1.ysc.c" />
+    <ClCompile Include="prop_drop.ysc.c" />
+    <ClCompile Include="racetest.ysc.c" />
+    <ClCompile Include="rampage1.ysc.c" />
+    <ClCompile Include="rampage2.ysc.c" />
+    <ClCompile Include="rampage3.ysc.c" />
+    <ClCompile Include="rampage4.ysc.c" />
+    <ClCompile Include="rampage5.ysc.c" />
+    <ClCompile Include="rampage_controller.ysc.c" />
+    <ClCompile Include="randomchar_controller.ysc.c" />
+    <ClCompile Include="range_modern.ysc.c" />
+    <ClCompile Include="range_modern_mp.ysc.c" />
+    <ClCompile Include="replay_controller.ysc.c" />
+    <ClCompile Include="rerecord_recording.ysc.c" />
+    <ClCompile Include="respawn_controller.ysc.c" />
+    <ClCompile Include="restrictedareas.ysc.c" />
+    <ClCompile Include="re_abandonedcar.ysc.c" />
+    <ClCompile Include="re_accident.ysc.c" />
+    <ClCompile Include="re_armybase.ysc.c" />
+    <ClCompile Include="re_arrests.ysc.c" />
+    <ClCompile Include="re_atmrobbery.ysc.c" />
+    <ClCompile Include="re_bikethief.ysc.c" />
+    <ClCompile Include="re_border.ysc.c" />
+    <ClCompile Include="re_burials.ysc.c" />
+    <ClCompile Include="re_bus_tours.ysc.c" />
+    <ClCompile Include="re_cartheft.ysc.c" />
+    <ClCompile Include="re_chasethieves.ysc.c" />
+    <ClCompile Include="re_crashrescue.ysc.c" />
+    <ClCompile Include="re_cultshootout.ysc.c" />
+    <ClCompile Include="re_dealgonewrong.ysc.c" />
+    <ClCompile Include="re_domestic.ysc.c" />
+    <ClCompile Include="re_drunkdriver.ysc.c" />
+    <ClCompile Include="re_duel.ysc.c" />
+    <ClCompile Include="re_gangfight.ysc.c" />
+    <ClCompile Include="re_gang_intimidation.ysc.c" />
+    <ClCompile Include="re_getaway_driver.ysc.c" />
+    <ClCompile Include="re_hitch_lift.ysc.c" />
+    <ClCompile Include="re_homeland_security.ysc.c" />
+    <ClCompile Include="re_lossantosintl.ysc.c" />
+    <ClCompile Include="re_lured.ysc.c" />
+    <ClCompile Include="re_monkey.ysc.c" />
+    <ClCompile Include="re_mountdance.ysc.c" />
+    <ClCompile Include="re_muggings.ysc.c" />
+    <ClCompile Include="re_paparazzi.ysc.c" />
+    <ClCompile Include="re_prison.ysc.c" />
+    <ClCompile Include="re_prisonerlift.ysc.c" />
+    <ClCompile Include="re_prisonvanbreak.ysc.c" />
+    <ClCompile Include="re_rescuehostage.ysc.c" />
+    <ClCompile Include="re_seaplane.ysc.c" />
+    <ClCompile Include="re_securityvan.ysc.c" />
+    <ClCompile Include="re_shoprobbery.ysc.c" />
+    <ClCompile Include="re_snatched.ysc.c" />
+    <ClCompile Include="re_stag_do.ysc.c" />
+    <ClCompile Include="re_yetarian.ysc.c" />
+    <ClCompile Include="rollercoaster.ysc.c" />
+    <ClCompile Include="rural_bank_heist.ysc.c" />
+    <ClCompile Include="rural_bank_prep1.ysc.c" />
+    <ClCompile Include="rural_bank_setup.ysc.c" />
+    <ClCompile Include="savegame_bed.ysc.c" />
+    <ClCompile Include="save_anywhere.ysc.c" />
+    <ClCompile Include="scaleformgraphictest.ysc.c" />
+    <ClCompile Include="scaleformminigametest.ysc.c" />
+    <ClCompile Include="scaleformprofiling.ysc.c" />
+    <ClCompile Include="scaleformtest.ysc.c" />
+    <ClCompile Include="scene_builder.ysc.c" />
+    <ClCompile Include="sclub_front_bouncer.ysc.c" />
+    <ClCompile Include="scripted_cam_editor.ysc.c" />
+    <ClCompile Include="scriptplayground.ysc.c" />
+    <ClCompile Include="scripttest1.ysc.c" />
+    <ClCompile Include="scripttest2.ysc.c" />
+    <ClCompile Include="scripttest3.ysc.c" />
+    <ClCompile Include="scripttest4.ysc.c" />
+    <ClCompile Include="script_metrics.ysc.c" />
+    <ClCompile Include="sctv.ysc.c" />
+    <ClCompile Include="sc_lb_global_block.ysc.c" />
+    <ClCompile Include="selector.ysc.c" />
+    <ClCompile Include="selector_example.ysc.c" />
+    <ClCompile Include="selling_short_1.ysc.c" />
+    <ClCompile Include="selling_short_2.ysc.c" />
+    <ClCompile Include="shooting_camera.ysc.c" />
+    <ClCompile Include="shoprobberies.ysc.c" />
+    <ClCompile Include="shop_controller.ysc.c" />
+    <ClCompile Include="shot_bikejump.ysc.c" />
+    <ClCompile Include="shrinkletter.ysc.c" />
+    <ClCompile Include="sh_intro_f_hills.ysc.c" />
+    <ClCompile Include="sh_intro_m_home.ysc.c" />
+    <ClCompile Include="smoketest.ysc.c" />
+    <ClCompile Include="social_controller.ysc.c" />
+    <ClCompile Include="solomon1.ysc.c" />
+    <ClCompile Include="solomon2.ysc.c" />
+    <ClCompile Include="solomon3.ysc.c" />
+    <ClCompile Include="spaceshipparts.ysc.c" />
+    <ClCompile Include="spawn_activities.ysc.c" />
+    <ClCompile Include="speech_reverb_tracker.ysc.c" />
+    <ClCompile Include="spmc_instancer.ysc.c" />
+    <ClCompile Include="spmc_preloader.ysc.c" />
+    <ClCompile Include="sp_dlc_registration.ysc.c" />
+    <ClCompile Include="sp_editor_mission_instance.ysc.c" />
+    <ClCompile Include="sp_menuped.ysc.c" />
+    <ClCompile Include="sp_pilotschool_reg.ysc.c" />
+    <ClCompile Include="standard_global_init.ysc.c" />
+    <ClCompile Include="standard_global_reg.ysc.c" />
+    <ClCompile Include="startup.ysc.c" />
+    <ClCompile Include="startup_install.ysc.c" />
+    <ClCompile Include="startup_locationtest.ysc.c" />
+    <ClCompile Include="startup_positioning.ysc.c" />
+    <ClCompile Include="startup_smoketest.ysc.c" />
+    <ClCompile Include="stats_controller.ysc.c" />
+    <ClCompile Include="stock_controller.ysc.c" />
+    <ClCompile Include="streaming.ysc.c" />
+    <ClCompile Include="stripclub.ysc.c" />
+    <ClCompile Include="stripclub_drinking.ysc.c" />
+    <ClCompile Include="stripclub_mp.ysc.c" />
+    <ClCompile Include="stripperhome.ysc.c" />
+    <ClCompile Include="stunt_plane_races.ysc.c" />
+    <ClCompile Include="tasklist_1.ysc.c" />
+    <ClCompile Include="tattoo_shop.ysc.c" />
+    <ClCompile Include="taxilauncher.ysc.c" />
+    <ClCompile Include="taxiservice.ysc.c" />
+    <ClCompile Include="taxitutorial.ysc.c" />
+    <ClCompile Include="taxi_clowncar.ysc.c" />
+    <ClCompile Include="taxi_cutyouin.ysc.c" />
+    <ClCompile Include="taxi_deadline.ysc.c" />
+    <ClCompile Include="taxi_followcar.ysc.c" />
+    <ClCompile Include="taxi_gotyounow.ysc.c" />
+    <ClCompile Include="taxi_gotyourback.ysc.c" />
+    <ClCompile Include="taxi_needexcitement.ysc.c" />
+    <ClCompile Include="taxi_procedural.ysc.c" />
+    <ClCompile Include="taxi_takeiteasy.ysc.c" />
+    <ClCompile Include="taxi_taketobest.ysc.c" />
+    <ClCompile Include="tempalpha.ysc.c" />
+    <ClCompile Include="temptest.ysc.c" />
+    <ClCompile Include="tennis.ysc.c" />
+    <ClCompile Include="tennis_ambient.ysc.c" />
+    <ClCompile Include="tennis_family.ysc.c" />
+    <ClCompile Include="tennis_network_mp.ysc.c" />
+    <ClCompile Include="test_startup.ysc.c" />
+    <ClCompile Include="thelastone.ysc.c" />
+    <ClCompile Include="timershud.ysc.c" />
+    <ClCompile Include="title_update_registration.ysc.c" />
+    <ClCompile Include="title_update_registration_2.ysc.c" />
+    <ClCompile Include="tonya1.ysc.c" />
+    <ClCompile Include="tonya2.ysc.c" />
+    <ClCompile Include="tonya3.ysc.c" />
+    <ClCompile Include="tonya4.ysc.c" />
+    <ClCompile Include="tonya5.ysc.c" />
+    <ClCompile Include="towing.ysc.c" />
+    <ClCompile Include="traffickingsettings.ysc.c" />
+    <ClCompile Include="traffickingteleport.ysc.c" />
+    <ClCompile Include="traffick_air.ysc.c" />
+    <ClCompile Include="traffick_ground.ysc.c" />
+    <ClCompile Include="train_create_widget.ysc.c" />
+    <ClCompile Include="train_tester.ysc.c" />
+    <ClCompile Include="trevor1.ysc.c" />
+    <ClCompile Include="trevor2.ysc.c" />
+    <ClCompile Include="trevor3.ysc.c" />
+    <ClCompile Include="trevor4.ysc.c" />
+    <ClCompile Include="triathlonsp.ysc.c" />
+    <ClCompile Include="tunables_registration.ysc.c" />
+    <ClCompile Include="tuneables_processing.ysc.c" />
+    <ClCompile Include="turret_cam_script.ysc.c" />
+    <ClCompile Include="ufo.ysc.c" />
+    <ClCompile Include="ugc_global_registration.ysc.c" />
+    <ClCompile Include="underwaterpickups.ysc.c" />
+    <ClCompile Include="utvc.ysc.c" />
+    <ClCompile Include="vehiclespawning.ysc.c" />
+    <ClCompile Include="vehicle_ai_test.ysc.c" />
+    <ClCompile Include="vehicle_force_widget.ysc.c" />
+    <ClCompile Include="vehicle_gen_controller.ysc.c" />
+    <ClCompile Include="vehicle_plate.ysc.c" />
+    <ClCompile Include="vehicle_stealth_mode.ysc.c" />
+    <ClCompile Include="veh_play_widget.ysc.c" />
+    <ClCompile Include="walking_ped.ysc.c" />
+    <ClCompile Include="wardrobe_mp.ysc.c" />
+    <ClCompile Include="wardrobe_sp.ysc.c" />
+    <ClCompile Include="weapon_audio_widget.ysc.c" />
+    <ClCompile Include="wp_partyboombox.ysc.c" />
+    <ClCompile Include="xml_menus.ysc.c" />
+    <ClCompile Include="yoga.ysc.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
